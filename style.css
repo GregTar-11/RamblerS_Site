@@ -157,8 +157,10 @@ body{
     width: 1440px;
     margin-inline:auto;
     /* padding-inline-start: 40px; */
-
 }
+
+
+
 h1,
 h2,
 h3,
@@ -256,9 +258,6 @@ a:hover{
     font-weight: 800;
     font-size: 62px;
     margin-top: 118px;
-    /* margin-bottom: 45px; */
-    /* по центру по  */
-    /* align-items:; */
     text-align: center;
     color: var(--color-light);
 
@@ -268,12 +267,66 @@ a:hover{
 
 }
 
+.header-catalog{
+    margin-left: auto;
+    margin-right: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 300px;
+    height: 120px;
+}
+
+.header-catalog p{
+    height: 0.1em;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.header-catalog-button{
+    display: inline-flex;
+    align-items: center;
+    width: 188px;
+    height: 60px;
+    border-radius: 100px;
+    background-color: var(--color-blue);
+    color: var(--color-light);
+    padding-block: 22px;
+    padding-inline: 40px;
+}
+/* 
+.button{
+    display: inline-flex;
+    align-items: center;
+    height: 60px;
+    padding-inline: 40px;
+} */
+
+
 .eleps{
     display: block;
-
     width: 1773px;
     height: 835px;
     border-radius: 50%;
     background-color: var(--color-light);
+    position: relative;
+    right: 184px;
+    bottom:280px;
+    z-index: -1;
+}
+
+.content{
+    height: 600px;
+    
+}
+
+.information{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    height: 100vh;
+    /* по центру по  */
+    align-items: center;
 }
 
