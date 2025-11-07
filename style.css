@@ -302,27 +302,6 @@ a:hover {
     margin-top: 0px;
 }
 
-/* 
-.button{
-    display: inline-flex;
-    align-items: center;
-    height: 60px;
-    padding-inline: 40px;
-} */
-
-/* .content{
-    position: sticky;
-    height: 600px;
-    background-color: var(--color-light);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    z-index: -1;
-
-} */
-
 .content-info {
     position: sticky;
     height: 600px;
@@ -337,7 +316,7 @@ a:hover {
 
 .eleps {
     flex-shrink: 0;
-    /* width: 1773px; */
+    width: 1773px;
     height: 835px;
     border-radius: 50%;
     background-color: var(--color-light);
@@ -395,33 +374,140 @@ a:hover {
 }
 
 
-/* .card {
-    background-image: url(./img/fon-river.png);
 
-    background-repeat: no-repeat;
-} */
-
-.card {
-    position: relative;
-    border-radius: 12px;
-    overflow: hidden;
-    color: #fff;
-    width: 350px;
-    height: 250px;
+.new-product{
+    width: 1440px;
+    height: 622px;
+    background-color: var(--color-light);
 }
 
-.card-bg {
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)),
-    url("./img/fon-river.png");
-    background-size: cover;
-    background-position: center;
-    height: 100%;
+.new-product h3{
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 44px;
+    letter-spacing: 3%;
+    line-height: 50px;
+    text-align: center;
+    color: var(--color-dark-grey);
+    margin-top: 0px;
+    margin-bottom: 135px;
+}
+
+
+.cards{
+    width: 1360;
     display: flex;
-    align-items: flex-end;
-    padding: 20px;
+    padding-inline: 40px;
+    justify-content: space-between;
 }
 
-.card-content {
+.card{
+    background-image: url(./img/fon-river.png);
     position: relative;
-    z-index: 2;
+    width: 437px;
+    height: 437px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    /* padding: 24px; */
+    align-items: flex-start;
+    justify-content: space-between;
+    color: var(--color-light);
+}
+
+
+.card.forest{
+    background-image: url(./img/fon-forest.png);
+}
+.card.rok{
+    background-image: url(./img/fon-rok.png);
+}
+
+.bg-avto img{
+    position: absolute;
+    left: 10%;
+    top:-160px;
+}
+
+
+.card-hiden{
+    width: 100%;
+    height: 176px;
+}
+
+.card-content{
+    background-image: linear-gradient(to top, rgba(245, 190, 79, 1),rgba(245, 190, 79, 0));
+    background-size: 100%;
+    height: 210px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 24px;
+
+}
+
+.card-content.forest{
+    background-image: linear-gradient(to top,rgba(26, 39, 27, 1),rgba(26, 39, 27, 0));
+    background-size: 100%;
+
+}
+.card-content.rok{
+    background-image: linear-gradient(to top,rgba(79, 148, 164, 1),rgba(79, 148, 164, 0));
+    background-size: 100%;
+    
+}
+
+.title-card{
+    font-size: 44px;
+    font-weight: 500;
+    letter-spacing: 0%;
+    line-height:50px;
+    text-transform: none;
+    margin-top: 24px;
+    margin-bottom: 8px;
+}
+
+.subtitle{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.card-content footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-content footer p{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+.button-buy {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 122px;
+    height: 40px;
+    border-radius: 100px;
+    border-color: var(--color-light);
+    background-color: transparent;
+    color: var(--color-light);
+    padding-block: 22px;
+    padding-inline: 40px;
+}
+
+.button-buy::after {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin-left: 20px;
+    background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.99999 2.66675L7.05999 3.60675L10.78 7.33341H2.66666V8.66675H10.78L7.05999 12.3934L7.99999 13.3334L13.3333 8.00008L7.99999 2.66675Z' fill='white'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* Чтобы стрелка умещалась в заданные width/height */
 }
