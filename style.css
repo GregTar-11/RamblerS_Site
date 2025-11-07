@@ -142,20 +142,20 @@ body {
     --color-dark-grey: rgba(205, 213, 221, 1);
     --color-light-grey: rgba(255, 255, 255, 0.5);
     --color-light: rgba(255, 255, 255, 1);
-    --color-blue:rgba(12, 18, 42, 1);
+    --color-blue: rgba(12, 18, 42, 1);
 
     --border-radius: 62px;
-    
-    --transition-duration: 0,2c;
+
+    --transition-duration: 0, 2c;
 
 }
 
-body{
+body {
     background-color: var(--color-dark-grey);
-    color:var(--color-blue);
-    font-family: 'GTWalsheimPro' , sans-serif;
+    color: var(--color-blue);
+    font-family: 'GTWalsheimPro', sans-serif;
     width: 1440px;
-    margin-inline:auto;
+    margin-inline: auto;
     /* padding-inline-start: 40px; */
 }
 
@@ -166,7 +166,7 @@ h2,
 h3,
 h4,
 h5,
-h6{
+h6 {
     font-weight: 800;
     text-transform: uppercase;
 }
@@ -174,18 +174,19 @@ h6{
 a,
 button,
 textarea,
-svg *{
-    transition-duration:0.3s;
+svg * {
+    transition-duration: 0.3s;
 }
 
-a{
+a {
     color: var(--color-blue);
 }
 
-a:hover{
+a:hover {
     color: var(--color-light);
 }
-.header{
+
+.header {
     width: 1440px;
     height: 851px;
     display: flex;
@@ -194,7 +195,7 @@ a:hover{
 
 }
 
-.header-box{
+.header-box {
     width: 1360px;
     background-color: var(--color-light-grey);
     border-radius: 62px;
@@ -206,21 +207,21 @@ a:hover{
 
     display: flex;
     /* по центру по игрику  */
-    justify-content:space-between;
+    justify-content: space-between;
     /* по центру по  */
     align-items: center;
     max-height: 850px;
     /* не слипались */
-    column-gap:20px;
+    column-gap: 20px;
 }
 
-.header-box-menu-list{
+.header-box-menu-list {
     display: flex;
     column-gap: 30px;
 }
 
-.header-box-menu-link{
-    display:inline-flex;
+.header-box-menu-link {
+    display: inline-flex;
     height: 80px;
     align-items: center;
     /* убрать подчеркивания  */
@@ -232,11 +233,11 @@ a:hover{
 
 }
 
-.header-box-logo{
+.header-box-logo {
     margin-right: 175px;
 }
 
-.header-shop-button{
+.header-shop-button {
     background-color: transparent;
     height: 24px;
     width: 24px;
@@ -244,17 +245,17 @@ a:hover{
     padding-right: 20px;
 }
 
-.header-profil-button{
+.header-profil-button {
     height: 24px;
     width: 24px;
     background-color: transparent;
     border: none;
 }
 
-.title-h1{
+.title-h1 {
     height: 164px;
     width: 985px;
-    line-height:1.5;
+    line-height: 1.5;
     font-weight: 800;
     font-size: 62px;
     margin-top: 118px;
@@ -262,12 +263,15 @@ a:hover{
     color: var(--color-light);
 
 }
-.bushome-img{
-    transform: rotate(12deg);
 
+.bushome-img {
+    transform: rotate(12deg);
+    height: 670px;
+    margin-top: -15px;
 }
 
-.header-catalog{
+.header-catalog {
+    margin-top: -70px;
     margin-left: auto;
     margin-right: 70px;
     display: flex;
@@ -277,23 +281,27 @@ a:hover{
     height: 120px;
 }
 
-.header-catalog p{
-    height: 0.1em;
+.header-catalog p {
     font-size: 16px;
     font-weight: 400;
+    letter-spacing: 0%;
+    line-height: 18px;
+
 }
 
-.header-catalog-button{
+.header-catalog-button {
     display: inline-flex;
     align-items: center;
-    width: 188px;
+    width: 228px;
     height: 60px;
     border-radius: 100px;
     background-color: var(--color-blue);
     color: var(--color-light);
     padding-block: 22px;
     padding-inline: 40px;
+    margin-top: 0px;
 }
+
 /* 
 .button{
     display: inline-flex;
@@ -302,31 +310,118 @@ a:hover{
     padding-inline: 40px;
 } */
 
-
-.eleps{
-    display: block;
-    width: 1773px;
-    height: 835px;
-    border-radius: 50%;
+/* .content{
+    position: sticky;
+    height: 600px;
     background-color: var(--color-light);
-    position: relative;
-    right: 184px;
-    bottom:280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    z-index: -1;
+
+} */
+
+.content-info {
+    position: sticky;
+    height: 600px;
+    background-color: var(--color-light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
     z-index: -1;
 }
 
-.content{
-    height: 600px;
-    
+.eleps {
+    flex-shrink: 0;
+    /* width: 1773px; */
+    height: 835px;
+    border-radius: 50%;
+    background-color: var(--color-light);
+    position: absolute;
+    bottom: 60px;
+    z-index: -1;
 }
 
-.information{
+.information {
+    width: 533px;
+    height: 212px;
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: space-between;
     align-items: center;
-    height: 100vh;
-    /* по центру по  */
-    align-items: center;
+    z-index: 10;
 }
 
+.information-h3 {
+    font-size: 44px;
+    font-weight: 800;
+    color: var(--color-dark-grey);
+}
+
+.information-p {
+    text-align: center;
+    letter-spacing: 0%;
+    line-height: 18px;
+}
+
+.information-button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 240px;
+    height: 60px;
+    border-radius: 100px;
+    background-color: transparent;
+    color: var(--color-blue);
+    padding-block: 22px;
+    padding-inline: 40px;
+}
+
+.information-button::after {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin-left: 20px;
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 4L10.59 5.41L16.17 11H4V13H16.17L10.59 18.59L12 20L20 12L12 4Z' fill='%230C122A'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* Чтобы стрелка умещалась в заданные width/height */
+}
+
+
+/* .card {
+    background-image: url(./img/fon-river.png);
+
+    background-repeat: no-repeat;
+} */
+
+.card {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    color: #fff;
+    width: 350px;
+    height: 250px;
+}
+
+.card-bg {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)),
+    url("./img/fon-river.png");
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    padding: 20px;
+}
+
+.card-content {
+    position: relative;
+    z-index: 2;
+}
