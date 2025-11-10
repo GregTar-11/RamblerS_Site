@@ -42,12 +42,26 @@
     color: var(--color-blue);
 }
 
-.information button {
+.button-information{
+    width: 240px;
+    height: 60px;
     display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
     padding-inline: 40px;
-    padding-block: 22px;
     border-radius: 100px;
     background-color: transparent;
     border-width: 2px;
     color: var(--color-blue);
+}
+
+.button-information::after {
+    content: '';
+    background-image: url(./svg/arrow_blek.svg);
+    display: block;
+    justify-items: start;
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    background-size: contain;
 }

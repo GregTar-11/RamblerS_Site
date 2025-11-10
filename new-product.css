@@ -1,4 +1,4 @@
-.new-product h3{
+.new-product h3 {
     font-size: 44px;
     font-weight: 800;
     letter-spacing: 1.32px;
@@ -6,20 +6,23 @@
     text-align: center;
     margin-bottom: 135px;
 }
-.new-product{
-    background-color: rgb(197, 234, 234);
-}
 
-.cards{
+/* .new-product{
+    background-color: rgb(197, 234, 234);
+} */
+
+.cards {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     gap: 24px;
+    width: 94.5vw;
 }
 
-.card{
+.card {
     background-image: url(./img/fon-river.png);
+    /* background-size:cover; */
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -27,16 +30,18 @@
     width: 437px;
     height: 437px;
     color: white;
+    border-radius: 10px;
 }
-.card img{
-    position: absolute;
-    right: 43px;
-    top:-160px;
+
+.card img {
+    position: relative;
+    align-self: center;
+    top: -120px;
 
 }
 
-.card-content{
-    background-image: linear-gradient(to top, rgba(245, 190, 79, 0.95),rgba(245, 190, 79, 0));
+.card-content {
+    background-image: linear-gradient(to top, rgba(245, 190, 79, 0.95), rgba(245, 190, 79, 0));
     padding: 24px;
     display: flex;
     flex-direction: column;
@@ -44,14 +49,49 @@
     height: 50%;
 }
 
-.title-card{
+.title-card {
     font-size: 44px;
     font-weight: 500;
     line-height: 1.2;
+    white-space: nowrap;
 }
 
-.buy-info{
+.subtitle {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.buy-info {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+.button-buy {
+    width: 120px;
+    height: 44px;
+    border-radius: 100px;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    border-color: white;
+    border-width: 1px;
+    padding-inline: 16px;
+
+    color: white;
+    font-size: 14px;
+    letter-spacing: 1.26px;
+    font-weight: 500;
+}
+
+.button-buy::before {
+    content: '';
+    background-image: url(./svg/arrow-wihte.svg);
+    display: block;
+    justify-items: start;
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    background-size: contain;
 }

@@ -59,11 +59,13 @@ body{
 }
 main{
     background-color: white;
-    width: 98.8vw;
-    padding-inline:2.4vw;
+    width: 100%;
+    padding-inline:2.5vw;
     z-index: 1;
 }
 
 button{
     font-family: 'GTWalsheimPro', sans-serif;
 }
+
+/* 1100 медия запрос на адаптивная верстка */
