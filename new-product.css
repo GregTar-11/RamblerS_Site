@@ -1,0 +1,57 @@
+.new-product h3{
+    font-size: 44px;
+    font-weight: 800;
+    letter-spacing: 1.32px;
+    color: rgba(205, 213, 221, 1);
+    text-align: center;
+    margin-bottom: 135px;
+}
+.new-product{
+    background-color: rgb(197, 234, 234);
+}
+
+.cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+}
+
+.card{
+    background-image: url(./img/fon-river.png);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+    width: 437px;
+    height: 437px;
+    color: white;
+}
+.card img{
+    position: absolute;
+    right: 43px;
+    top:-160px;
+
+}
+
+.card-content{
+    background-image: linear-gradient(to top, rgba(245, 190, 79, 0.95),rgba(245, 190, 79, 0));
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 50%;
+}
+
+.title-card{
+    font-size: 44px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.buy-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

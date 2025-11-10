@@ -1,0 +1,98 @@
+header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 94.5vw;
+    background-color: var(--color-dark-grey);
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-inline: 2.8vw;
+    background-color: var(--color-light-grey);
+    align-items: center;
+    border-radius: 62px;
+
+}
+
+.navigation {
+    color: rgba(12, 18, 42, 1);
+    display: flex;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1.26px;
+    width: 20%;
+    white-space: nowrap;
+    gap: 32px;
+}
+
+.extion {
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+    justify-content: flex-end;
+    gap: 24px;
+}
+
+#shop {
+    width: 24px;
+    height: 24px;
+    padding-inline: 3px;
+    padding-block: 2px;
+}
+
+#profil {
+    width: 24px;
+    height: 24px;
+}
+
+h1 {
+    margin-top: 15vh;
+    font-size: 61px;
+    font-weight: 800;
+    letter-spacing: 1.83px;
+    line-height: normal;
+    color: white;
+    text-align: center;
+
+}
+
+.bas-img {
+    align-self: center;
+    transform: rotate(12deg);
+    margin-bottom: 30px;
+    z-index: 2;
+
+}
+
+.info-blok {
+    margin-top: -16px;
+    align-self: flex-end;
+    margin-right: 3vw;
+    z-index: 2;
+}
+
+.info-blok p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    line-height: 1.125;
+    margin-bottom: 23px;
+}
+
+.info-blok button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    border-radius: 62px;
+    background-color: rgba(12, 18, 42, 1);
+    color: white;
+    padding-block: 22px;
+    padding-inline: 40px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1.26;
+}

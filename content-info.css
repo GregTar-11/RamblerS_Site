@@ -1,0 +1,53 @@
+.content-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-block: 200px 180px;
+    position: relative;
+}
+
+
+.eleps {
+    position: absolute;
+    width: 1775px;
+    height: 835px;
+    border-radius: 100%;
+    background-color: white;
+    bottom: -100px;
+    z-index: -1;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: -1;
+}
+
+.information h2 {
+    font-size: 44px;
+    font-weight: 800;
+    letter-spacing: 1.32px;
+    color: rgba(205, 213, 221, 1);
+}
+
+.information p {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--color-blue);
+}
+
+.information button {
+    display: inline-flex;
+    padding-inline: 40px;
+    padding-block: 22px;
+    border-radius: 100px;
+    background-color: transparent;
+    border-width: 2px;
+    color: var(--color-blue);
+}

@@ -1,0 +1,69 @@
+@font-face {
+    font-family: 'GTWalsheimPro';
+    src: url(../fonts/GTWalsheimPro-Regular.woff2) format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GTWalsheimPro';
+    src: url(../fonts/GTWalsheimPro-Medium.woff2) format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GTWalsheimPro';
+    src: url(../fonts/GTWalsheimPro-Bold.woff2) format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GTWalsheimPro';
+    src: url(../fonts/GTWalsheimPro-UltraBold.woff2) format('woff2');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+:root {
+    --color-dark-grey: rgba(205, 213, 221, 1);
+    --color-light-grey: rgba(255, 255, 255, 0.5);
+    --color-light: rgba(255, 255, 255, 1);
+    --color-blue: rgba(12, 18, 42, 1);
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 8vh;
+    width: 100%;
+    height: 100%;
+    background-color:var(--color-dark-grey);
+    color: var(--color-blue);
+    font-family: 'GTWalsheimPro', sans-serif;
+    overflow-x: hidden;
+}
+main{
+    background-color: white;
+    width: 98.8vw;
+    padding-inline:2.4vw;
+    z-index: 1;
+}
+
+button{
+    font-family: 'GTWalsheimPro', sans-serif;
+}
