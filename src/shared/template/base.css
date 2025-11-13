@@ -118,7 +118,7 @@ h1 {
 
 .catalog-button::before {
     content: '';
-    background-image: url(./svg/arrow-wihte.svg);
+    background-image: url(/shared/svg/arrow-wihte.svg);
     display: block;
     justify-items: start;
     width: 20px;

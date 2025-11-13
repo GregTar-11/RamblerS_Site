@@ -1,4 +1,4 @@
-.new-product h3 {
+/* .new-product h3 {
     font-size: 44px;
     font-weight: 800;
     letter-spacing: 1.32px;
@@ -6,10 +6,6 @@
     text-align: center;
     margin-bottom: 135px;
 }
-
-/* .new-product{
-    background-color: rgb(197, 234, 234);
-} */
 
 .cards {
     display: flex;
@@ -21,8 +17,7 @@
 }
 
 .card {
-    background-image: url(./img/fon-river.png);
-    /* background-size:cover; */
+    background-image: url(/shared/img/fon-river.png);
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -87,11 +82,11 @@
 
 .button-buy::before {
     content: '';
-    background-image: url(./svg/arrow-wihte.svg);
+    background-image: url(/shared/svg/arrow-wihte.svg);
     display: block;
     justify-items: start;
     width: 16px;
     height: 16px;
     background-repeat: no-repeat;
     background-size: contain;
-}
+} */

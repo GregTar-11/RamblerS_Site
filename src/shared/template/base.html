@@ -1,26 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="header.css">
-    <link rel="stylesheet" href="content-info.css">
-    <link rel="stylesheet" href="new-product.css">
+    <link rel="stylesheet" href="/shared/template/main.css">
+    <link rel="stylesheet" href="/shared/template/base.css">
+    {{style}}
+    <!-- <link rel="stylesheet" href="content-info.css">
+    <link rel="stylesheet" href="new-product.css"> -->
 </head>
-
 <body>
     <header>
         <nav>
             <div class="navigation">
-                <a href="">КАТАЛОГ</a>
-                <a href="">КОНТАКТИ</a>
-                <a href="">ПРО НАС</a>
+                <a href="/product">КАТАЛОГ</a>
+                <a href="/">КОНТАКТИ</a>
+                <a href="/">ПРО НАС</a>
             </div>
-            <a href="">
-                <img class="logo-img" src="./img/RamblerS1.png" alt="">
+            <a href="/">
+                <img class="logo-img" src="/shared/img/RamblerS1.png" alt="">
             </a>
             <div class="extion">
                 <a id="shop" href="">
@@ -42,7 +41,7 @@
         <h1>Технології <br>
             Які змінюють реальність
         </h1>
-        <img class="bas-img" src="./img/Bus.png" alt="">
+        <img class="bas-img" src="/shared/img/Bus.png" alt="">
         <div class="info-blok">
             <p>Передові технології в одному місці. <br>
                 Обирай найкраще для найважливішого.</p>
@@ -50,63 +49,11 @@
         </div>
     </header>
     <main>
-        <div class="content-info">
-            <div class="eleps"></div>
-            <div class="information">
-                <h2> ПРО НАС</h2>
-                <p>Ми — команда, що об'єднує технології та надійність. <br>
-                    Пропонуємо будинки на колесах , перевірені у найскладніших умовах. <br>
-                    Обираємо тільки те, чому довіряємо самі.</p>
-                <button class="button-information"> ЧИТАТИ БІЛЬШЕ </button>
-            </div>
-        </div>
-        <div class="new-product">
-            <h3>НОВЕ НА САЙТІ</h3>
-
-            <div class="cards">
-                <article class="card">
-                    <img src="./img/smol-avto-test.png" alt="">
-                    <div class="card-content">
-                        <div>
-                            <p class="title-card">Business class</p>
-                            <p class="subtitle">Business class mobile home</p>
-                        </div>
-                        <div class="buy-info">
-                            <p class="price">from $2999</p>
-                            <button class="button-buy">КУПИТИ</button>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="card">
-                    <img src="./img/smol-avto-test.png" alt="">
-                    <div class="card-content">
-                        <div>
-                            <p class="title-card">Business class</p>
-                            <p class="subtitle">Business class mobile home</p>
-                        </div>
-                        <div class="buy-info">
-                            <p class="price">from $2999</p>
-                            <button class="button-buy">КУПИТИ</button>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="card">
-                    <img src="./img/smol-avto-test.png" alt="">
-                    <div class="card-content">
-                        <div>
-                            <p class="title-card">Business class</p>
-                            <p class="subtitle">Business class mobile home</p>
-                        </div>
-                        <div class="buy-info">
-                            <p class="price">from $2999</p>
-                            <button class="button-buy">КУПИТИ</button>
-                        </div>
-                    </div>
-                </article>
-            </div>
-        </div>
+        {{content}}
     </main>
+    <footer>
+    </footer>
+
+    {{scripts}}
 </body>
 </html>

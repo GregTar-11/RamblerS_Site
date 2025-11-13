@@ -1,0 +1,175 @@
+.content-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-block: 200px 180px;
+    position: relative;
+}
+
+
+.eleps {
+    position: absolute;
+    width: 1775px;
+    height: 835px;
+    border-radius: 100%;
+    background-color: white;
+    bottom: -100px;
+    z-index: -1;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: -1;
+}
+
+.information h2 {
+    font-size: 44px;
+    font-weight: 800;
+    letter-spacing: 1.32px;
+    color: rgba(205, 213, 221, 1);
+}
+
+.information p {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--color-blue);
+}
+
+.button-information{
+    width: 240px;
+    height: 60px;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 40px;
+    border-radius: 100px;
+    background-color: transparent;
+    border-width: 2px;
+    color: var(--color-blue);
+}
+
+.button-information::after {
+    content: '';
+    background-image: url(/shared/svg/arrow_blek.svg);
+    display: block;
+    justify-items: start;
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.new-product h3 {
+    font-size: 44px;
+    font-weight: 800;
+    letter-spacing: 1.32px;
+    color: rgba(205, 213, 221, 1);
+    text-align: center;
+    margin-bottom: 135px;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    width: 94.5vw;
+}
+
+.card {
+    background-image: url(/shared/img/fon-river.png);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+    width: 437px;
+    height: 437px;
+    color: white;
+    border-radius: 10px;
+}
+.card.forest{
+    background-image: url(/shared/img/fon-forest.png);
+}
+
+.card.roc{
+    background-image: url(/shared/img/fon-roc.png);
+}
+
+.card img {
+    position: relative;
+    align-self: center;
+    top: -120px;
+
+}
+
+.card-content {
+    background-image: linear-gradient(to top, rgba(245, 190, 79, 0.95), rgba(245, 190, 79, 0));
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 50%;
+}
+
+.card-content.forest{
+    background-image: linear-gradient(to top, rgba(154, 245, 79, 0.95), rgba(245, 190, 79, 0));
+}
+
+.card-content.roc{
+    background-image: linear-gradient(to top, rgba(79, 129, 245, 0.95), rgba(245, 190, 79, 0));
+}
+
+.title-card {
+    font-size: 44px;
+    font-weight: 500;
+    line-height: 1.2;
+    white-space: nowrap;
+}
+
+.subtitle {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.buy-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.button-buy {
+    width: 120px;
+    height: 44px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    border-color: white;
+    border-width: 1px;
+    padding-inline: 16px;
+
+    color: white;
+    font-size: 14px;
+    letter-spacing: 1.26px;
+    font-weight: 500;
+}
+
+.button-buy::before {
+    content: '';
+    background-image: url(/shared/svg/arrow-wihte.svg);
+    display: block;
+    justify-items: start;
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
