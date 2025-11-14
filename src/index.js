@@ -6,7 +6,7 @@ const define = function (req, res) {
     const urlParse = url.parse(req.url, true)
     let pathName = urlParse.pathname
 
-    const templatePath = path.join(__dirname, '/shared/template/base.html')
+    let templatePath = ''
     let stylePath = ''
     let filePath = ''
     // let stylePathNew = '/modules/main/new-product.css'
@@ -39,10 +39,12 @@ const define = function (req, res) {
     if(pathName ==='/'){
         filePath = path.join(__dirname, '/modules/main/main.html')
         stylePath='/modules/main/content-info.css'
+        templatePath = path.join(__dirname, '/shared/template/base.html')
     }
     else if(pathName ==='/product'){
         filePath = path.join(__dirname, '/modules/product/product.html')
         stylePath='/modules/product/product.css'
+        templatePath = path.join(__dirname, '/shared/template/alterBase.html')
     }
 
     fs.readFile(templatePath, 'utf-8',(err, layoutPage) => {

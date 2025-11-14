@@ -1,13 +1,14 @@
 .content-info {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-block: 200px 180px;
+    margin-block: 240px 180px;
     position: relative;
+    /* overflow: hidden; */
 }
 
-
-.eleps {
+/* .eleps {
     position: absolute;
     width: 1775px;
     height: 835px;
@@ -17,7 +18,23 @@
     z-index: -1;
     left: 50%;
     transform: translateX(-50%);
+} */
+.eleps {
+    position: absolute;
+
+    width: 100vw;
+    height: 47vw;
+
+    max-width: 1775px; 
+    max-height: 833px;
+
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    z-index: -1;
+    transform: translateY(-30%);
+    flex-grow: 1;
 }
+
 
 .information {
     display: flex;
@@ -42,7 +59,7 @@
     color: var(--color-blue);
 }
 
-.button-information{
+.button-information {
     width: 240px;
     height: 60px;
     display: inline-flex;
@@ -80,8 +97,32 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    width: 100%;
     gap: 24px;
-    width: 94.5vw;
+}
+
+@media (min-width: 375px) and (max-width: 1134px) {
+    main{
+        padding: 0;
+    }
+    .cards {
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+        gap: 120px;
+    }
+
+    .card {
+        width: 437px;
+        height: 437px;
+    }
+
+    .card img {
+        position: relative;
+        align-self: center;
+        top: -27%;
+        max-width: 100%;
+        height: auto;
+    }
 }
 
 .card {
@@ -90,24 +131,32 @@
     flex-direction: column;
     justify-content: flex-end;
     position: relative;
-    width: 437px;
+
+    flex-grow: 1;
+    flex-basis: 343px;
+    min-width: 343px;
+    max-width: 437px;
     height: 437px;
+
     color: white;
     border-radius: 10px;
 }
-.card.forest{
+
+.card.forest {
     background-image: url(/shared/img/fon-forest.png);
 }
 
-.card.roc{
+.card.roc {
     background-image: url(/shared/img/fon-roc.png);
 }
 
 .card img {
     position: relative;
     align-self: center;
-    top: -120px;
-
+    top: -27%;
+    /* top: -120px; */
+    max-width: 100%;
+    height: auto;
 }
 
 .card-content {
@@ -116,14 +165,14 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 50%;
+    height: 53%;
 }
 
-.card-content.forest{
+.card-content.forest {
     background-image: linear-gradient(to top, rgba(154, 245, 79, 0.95), rgba(245, 190, 79, 0));
 }
 
-.card-content.roc{
+.card-content.roc {
     background-image: linear-gradient(to top, rgba(79, 129, 245, 0.95), rgba(245, 190, 79, 0));
 }
 
@@ -143,6 +192,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
 
 .button-buy {
